@@ -2,7 +2,9 @@
 
 Toma una carpeta desordenada y mueve cada archivo a una subcarpeta según su tipo: Imagenes, Documentos, Videos, Musica, Comprimidos y Otros.
 
-> Este README es el punto de partida. Mejorarlo es uno de los issues del equipo.
+## Qué problema resuelve
+
+La carpeta de Descargas se llena de fotos, PDF, instaladores, videos y música revueltos, y encontrar algo toma minutos. Este script mira la extensión de cada archivo y lo mueve a la carpeta correspondiente. Ordena los 56 archivos de prueba en menos de un segundo, sin instalar nada.
 
 ## Cómo usarlo
 
@@ -16,6 +18,31 @@ python organizador.py         # la ordena
 Si `python` no funciona en tu computador, usa `py`.
 
 `crear_desorden.py` se puede ejecutar las veces que quieras: siempre deja la carpeta revuelta otra vez. Así pruebas sin riesgo, sin tocar tus archivos reales.
+
+## Ejemplo de salida
+
+Al ejecutar `python organizador.py` con la carpeta de prueba:
+
+```
+Organizando 'descargas_de_prueba'...
+
+  acceso_directo.lnk  ->  Otros/
+  atardecer.jpg  ->  Imagenes/
+  certificado_sena.pdf  ->  Documentos/
+  clase_grabada_martes.mov  ->  Videos/
+  cancion_favorita.mp3  ->  Musica/
+  proyecto_final_v2.zip  ->  Comprimidos/
+  ... (56 líneas, una por archivo)
+
+¡Listo! Organicé 56 archivos en 0.192 segundos.
+```
+
+Los archivos quedan en `descargas_de_prueba/Imagenes`, `Documentos`, `Videos`, `Musica`, `Comprimidos` y `Otros`.
+
+## Equipo
+
+- **Santiago** (cypher3215) — líder
+- **Ricardo** (ricardodherrerapirela-tech)
 
 ## Lo que vas a aprender con este script
 
